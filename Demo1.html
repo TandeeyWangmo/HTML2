@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> HTML Basic DEMO</title>
+        <style>
+            /* .header{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+                grid-template-areas: "item1 item2";
+            }
+
+            .item1 { grid-area: item1;
+                background-color:rgb(255, 0, 0);
+                text-align: center;
+            }
+
+            .item2 { grid-area: item2;
+                background-color:blue;
+                text-align: center;
+
+            } */
+
+            .header{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 1vw;
+                background-color: blueviolet;
+                color: white;
+            }
+
+            .item1 {
+                flex: 0 0 auto;
+            }
+
+            .item2 {
+                flex: 0 0 auto;
+
+            }
+            body {
+                background-color: rgb(18, 168, 168);
+            }
+
+            table,
+            th,
+            td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            form {
+           width: 40%;   
+           background-color: whitesmoke;  
+           padding: 20px;
+           border-radius: 8px;
+            }
+
+            @media(max-width: 400px) {
+                body{
+                    background-color: 
+                    rgb(65,155, 155);
+            }
+            .header{
+                flex-direction: column ;
+                align-items: center ;
+            }
+        }
+        </style>   
+        <link rel = "stylesheet" href= 
+        "styles.css">
+         
+    </head>
+
+    <body>
+        <div class = "header">
+
+            <div class="item 1">
+                <h1>HTML </h1>
+            </div>
+            <div class="item 2">
+                <h1>CSS</h1>
+            </div>
+        </div>
+
+            <h1 style = "color: blue; text-align: center">Welcome to HTML!</h1>
+            <span id = "highlight">HTML!</h1>
+        </div>
+        <h6>Welcome to HTML!</h6>
+        <P>This is a paragraph element. <b>HTML</b> uses tags to mark up
+        content.</P>
+        <h2>Welcome to HTML!</h2>
+        
+        </body>
+</html>
+<img src = "data:image/webp;base64,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" alt="HTML logo">
+<p>To learn more about HTML/visit
+    <a href="https://www.w3schools.com/" target="_blank">
+       <i> w3school </i></a> </p>
+       <p>In order to go to the second page<a href="ICT1\next.html">  Click Here</a></p>
+
+       <p>The concepts that will be covered here are:</p>
+       <ol>
+           <li>HTML Lists</li>
+           <li>HTML Forms</li>
+           <li>HTML Tables</li>
+       </ol>
+
+    <table>
+        <caption>Personal Information</caption>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>  
+            <tr>
+                <td>Tshering</td>
+                <td>Wangmo</td>
+                <td>28</td>
+            </tr>  
+            <tr>
+                <td>Pema</td>
+                <td>Dorji</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>Leki</td>
+                <td>Dorji</td>
+                <td>32</td>
+            </tr>
+    </table>
+    <form>
+        <fieldset>
+            
+            
+           <legend>User Personal Information</legend>  
+           <label for="name">Enter your full name:</label>
+           <input type="text" id="name" name="name" required />
+           <label for="email">Enter your email:</label>
+           <input type="email" id="email" name="email" required />
+           <label for="password">Enter your password:</label>
+           <input type="password" id="password" name="pass" required />
+           <label for="confirmPassword">Confirm your password:</label>
+           <input type="password" id="confirmPassword" name="confirmPass" required />
+
+<label>Enter your gender:</label>
+           <div class="gender-group">
+               <input type="radio" name="gender" value="male" id="male" required />
+               <label for="male">Male</label>
+               <input type="radio" name="gender" value="female" id="female" />
+               <label for="female">Female</label>
+               <input type="radio" name="gender" value="others" id="others" />
+               <label for="others">Others</label>
+           </div>
+
+           <label for="dob">Enter your Date of Birth:</label>
+           <input type="date" id="dob" name="dob" required />
+           <label for = "designation">Occupation</label>
+           <select id = "designation" name = "Occupation">
+            <option value="Government">Government Service</option>
+            <option value="Private">Private Sectors</option>
+           </select>
+           <label for="address">Enter your Address:</label>
+           <textarea id="address" name="address" required></textarea>
+           <input type="submit" value="Submit" />
+       </fieldset>
+
+        
+    </form>
+
+       
+    </body>
+</html>
